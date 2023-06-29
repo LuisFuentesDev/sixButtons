@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonplane"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#7559D9"
+        android:drawableLeft="@drawable/baseline_airplanemode_inactive_24"
+        android:text="Turn off flight mode"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPictured"
+        android:layout_width="293dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#C9C9C9"
+        android:text="Turn off flight mode"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonplane"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonplane"
+        app:layout_constraintTop_toBottomOf="@+id/buttonplane" />
+
+    <Button
+        android:id="@+id/buttonLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#5F94D9"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:drawableRight="@android:drawable/btn_star_big_on"
+        android:text="Turn off flight mode"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPictured"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonPictured"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPictured" />
+
+    <Button
+        android:id="@+id/buttonUpdating"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="64dp"
+        android:backgroundTint="#D9525E"
+        android:drawableLeft="@drawable/baseline_autorenew_24"
+        android:text="Turn off flight mode"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonplane"
+        app:layout_constraintTop_toTopOf="@+id/buttonplane" />
+
+    <Button
+        android:id="@+id/buttonUnlocked"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#484D50"
+        android:text="Turn off flight mode"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUpdating"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonUpdating"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdating" />
+
+    <Button
+        android:id="@+id/buttonMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#49A660"
+        android:drawableLeft="@drawable/baseline_pause_circle_24"
+        android:text="Turn off flight mode"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUnlocked"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonUnlocked" />
+</androidx.constraintlayout.widget.ConstraintLayout>
